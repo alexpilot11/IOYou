@@ -21,7 +21,16 @@
         <activity
             android:name=".DisplayMessageActivity"
             android:label="@string/title_activity_display_message"
-            android:parentActivityName="com.example.alex.myfirstapp.MyActivity" >
+            android:parentActivityName=".MyActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.alex.myfirstapp.MyActivity" />
+        </activity>
+        <activity
+            android:name=".CreateIOU"
+            android:label="@string/title_activity_create_iou"
+            android:parentActivityName=".MyActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.alex.myfirstapp.MyActivity" />
