@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MyActivity extends AppCompatActivity {
     public final static String EXTRA_MESSAGE = "com.example.alex.myfirstapp.MESSAGE";
@@ -27,6 +28,25 @@ public class MyActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), CreateIOU.class);
+                startActivity(intent);
+            }
+        });
+
+
+        TextView viewBills = (TextView) findViewById(R.id.viewBills);
+        viewBills.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), Outgoing.class);
+                startActivity(intent);
+            }
+        });
+
+        TextView viewIncoming = (TextView) findViewById(R.id.inPayments);
+        viewIncoming.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), Incoming.class);
                 startActivity(intent);
             }
         });
@@ -54,13 +74,17 @@ public class MyActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    // called on send button click
-    public void sendMessage(View view) {
-        // Do something in response to button
-        Intent intent = new Intent(this, DisplayMessageActivity.class);
-        EditText editText = (EditText) findViewById(R.id.edit_message);
-        String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, message);
+
+
+    public void incoming(View view) {
+        Intent intent = new Intent(this, Incoming.class);
+        startActivity(intent);
+
+    }
+
+
+    public void outgoing(View view) {
+        Intent intent = new Intent(this, Outgoing.class);
         startActivity(intent);
     }
 

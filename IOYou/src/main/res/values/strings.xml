@@ -66,5 +66,29 @@
 
     <string name="pref_title_vibrate">Vibrate</string>
     <string name="title_activity_create_iou">CreateIOU</string>
+    <string name="title_activity_display_outgoing">UOMes</string>
+    <string name="title_activity_display_incoming">IOUs</string>
+    <string name="title_activity_incoming">Incoming</string>
+    <string name="title_activity_outgoing">Outgoing</string>
+
+
+    <string name="out_bill_1">Power Bill, $45.00, Caleb Hill</string>
+    <string name="out_bill_2">Internet, $16.50, Sam Penn</string>
+
+
+    <string name="in_bill_1">Water Bill, $22.00, John Smith</string>
+    <string name="in_bill_2">Water Bill, $22.00, Caleb Hill</string>
+    <string name="in_bill_3">Water Bill, $22.00, Sam Penn</string>
+
+    <string name="title_activity_in_bill1">Water from John</string>
+    <string name="title_activity_in_bill2">Water from Caleb</string>
+    <string name="title_activity_in_bill3">Water from Sam</string>
+    <string name="title_activity_pay_bill1">Pay Bill</string>
+    <string name="title_activity_pay_bill2">Pay Bill</string>
+    <string name="title_activity_pay_bill3">Pay Bill</string>
+    <string name="title_activity_bill_paid">Bill Paid</string>
+    <string name="title_activity_out_bill1">Power to John</string>
+    <string name="title_activity_out_bill2">Internet to Sam</string>
+    <string name="title_activity_created_bill">Created Bill</string>
 
 </resources>

@@ -24,7 +24,7 @@
             android:parentActivityName=".MyActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.alex.myfirstapp.MyActivity" />
+                android:value="com.example.alex.myfirstapp.DisplayMessageActivity" />
         </activity>
         <activity
             android:name=".CreateIOU"
@@ -33,7 +33,52 @@
             android:theme="@style/AppTheme.NoActionBar" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.alex.myfirstapp.MyActivity" />
+                android:value="com.example.alex.myfirstapp.CreateIOU" />
+        </activity>
+        <activity
+            android:name=".Incoming"
+            android:label="@string/title_activity_incoming"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Outgoing"
+            android:label="@string/title_activity_outgoing"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".InBill1"
+            android:label="@string/title_activity_in_bill1"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".InBill2"
+            android:label="@string/title_activity_in_bill2"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".InBill3"
+            android:label="@string/title_activity_in_bill3"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".BillPaid"
+            android:label="@string/title_activity_bill_paid"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".OutBill1"
+            android:label="@string/title_activity_out_bill1"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".OutBill2"
+            android:label="@string/title_activity_out_bill2"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".CreatedBill"
+            android:label="@string/title_activity_created_bill"
+            android:theme="@style/AppTheme.NoActionBar" >
         </activity>
     </application>
 

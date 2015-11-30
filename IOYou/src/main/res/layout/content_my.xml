@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,18 +10,29 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/blah"/>
+        android:text="View Bills"
+        android:id="@+id/viewBills"
+        android:textSize="48dp"
+        android:layout_marginTop="152dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/inPayments"
+        android:layout_alignStart="@+id/inPayments"
+        android:textColor="#2f4f4f"
+        android:textStyle="bold" />
 
-    <EditText android:id="@+id/edit_message"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/edit_message"
-        android:layout_weight="1" />
-
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_send"
-        android:onClick="sendMessage"/>
+        android:text="View Incoming Payments"
+        android:id="@+id/inPayments"
+        android:textSize="48dp"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/viewBills"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:textColor="#2f4f4f"
+        android:textStyle="bold" />
 
-</LinearLayout>
+</RelativeLayout>

@@ -7,22 +7,30 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.Button;
+import android.widget.TextView;
 
-public class CreateIOU extends AppCompatActivity {
+public class Outgoing extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_iou);
+        setContentView(R.layout.activity_outgoing);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        Button button = (Button) findViewById(R.id.button5);
-        button.setOnClickListener(new View.OnClickListener() {
+        TextView tv1 = (TextView) findViewById(R.id.textView26);
+        tv1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), CreatedBill.class);
+                Intent intent = new Intent(view.getContext(), OutBill2.class);
+                startActivity(intent);
+            }
+        });
+        TextView tv2 = (TextView) findViewById(R.id.textView27);
+        tv2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), OutBill1.class);
                 startActivity(intent);
             }
         });
